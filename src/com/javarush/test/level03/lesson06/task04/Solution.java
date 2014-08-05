@@ -11,6 +11,7 @@ public class Solution
     public static void main(String[] args)
     {
         //Напишите тут ваш код
-        System.out.println(System.g);
+        String path = String.formast("%s\\bin\\java.exe", System.getProperty("java.home")) ;
+        System.out.print(path);
     }
 }
