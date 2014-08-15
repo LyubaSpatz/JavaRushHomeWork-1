@@ -14,9 +14,9 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = 0;
-        int minimum = 0;
-        for (int i = 5; i > 0; i--) {
+        int a;
+        int minimum = Integer.parseInt(reader.readLine());
+        for (int i = 4; i > 0; i--) {
             a = Integer.parseInt(reader.readLine());
             minimum = min( a, minimum);
         }
