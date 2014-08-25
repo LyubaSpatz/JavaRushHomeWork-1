@@ -48,33 +48,33 @@ public class Solution {
 
     public static class Cat {
         private String name;
-        private Cat parent;
-        private Cat parent2;
+        private Cat mother;
+        private Cat father;
 
         Cat(String name) {
             this.name = name;
         }
 
 
-        Cat(String name, Cat parent, Cat parent2) {
+        Cat(String name, Cat father, Cat mother) {
             this.name = name;
-            this.parent2 = parent;
-            this.parent = parent2;
+            this.father = father;
+            this.mother = mother;
         }
 
         @Override
         public String toString() {
             StringBuilder sb = new StringBuilder();
             sb.append(String.format("Cat name is %s", name));
-            if (parent == null)
+            if (mother == null)
                 sb.append(", no mother");
             else
-                sb.append(", mother is " + parent.name);
+                sb.append(", mother is " + mother.name);
 
-            if (parent2 == null)
+            if (father == null)
                 sb.append(", no father");
             else
-                sb.append(", father is " + parent2.name);
+                sb.append(", father is " + father.name);
             return sb.toString();
         }
     }
